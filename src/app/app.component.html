@@ -1,0 +1,16 @@
+<div>
+  @if (newSignal({value: false}); as working) {
+    <button (click)="btnClick(working)">
+      @if (working().value) {
+        <span> working ... </span>
+      } @else {
+        <span> click to work </span>
+      }
+      <i> {{ working().value }}</i>
+    </button>
+  }
+</div>
+
+<div>
+  {{ abc() }}
+</div>  
